@@ -73,7 +73,6 @@ function generateBuild() {
     const selected = document.querySelectorAll('.build-battlerite.is-active')
     let buildOrder = []
     for (let i = 0; i < selected.length; i++) {
-        console.log(selected[i].dataset.name)
         buildOrder.push(selected[i].dataset.name)
     }
 

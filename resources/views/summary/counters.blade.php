@@ -5,13 +5,13 @@
   @foreach ($counters as $counter)
   <div class="card tip">
     <div class="card-content">
-      <div class="columns is-vertically-aligned">
-        <div class="column is-1 is-paddingless has-text-centered">
+      <div class="columns is-mobile is-vertically-aligned">
+        <div class="column is-1-desktop is-2-mobile is-paddingless has-text-centered">
           <a href="/champions/{{ $counter->champion }}/counters">
             <img src="{{ $counter->championDetails->portrait }}">
           </a>
         </div>
-        <div class="column is-1 has-text-centered is-paddingless">
+        <div class="column is-1 has-text-centered is-paddingless is-hidden-mobile">
 
           <form method="POST" action="/counters/vote/{{ $counter->id }}">
             {{ csrf_field() }}

@@ -5,8 +5,8 @@
   @foreach ($builds as $build)
   <div class="card tip">
     <div class="card-content">
-      <div class="columns is-vertically-aligned">
-        <div class="column is-1 has-text-centered is-paddingless">
+      <div class="columns is-mobile is-vertically-aligned">
+        <div class="column is-1 has-text-centered is-paddingless is-hidden-mobile">
 
           <form method="POST" action="/builds/vote/{{ $build->id }}">
             {{ csrf_field() }}
@@ -35,9 +35,9 @@
           </form>
         </div>
         <div class="column is-9">
-        <div class="columns">
+        <div class="columns is-mobile is-multiline">
           @foreach ($build->battlerites as $b)
-            <div class="column is-2">
+            <div class="column is-2-desktop is-4-mobile">
               @include('partials.battlerite', $b)
             </div>
           @endforeach

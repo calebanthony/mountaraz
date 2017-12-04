@@ -5,8 +5,8 @@
   @foreach ($counters as $counter)
   <div class="card tip">
     <div class="card-content">
-      <div class="columns is-vertically-aligned">
-        <div class="column is-1 has-text-centered is-paddingless">
+      <div class="columns is-mobile is-vertically-aligned">
+        <div class="column is-1 has-text-centered is-paddingless is-hidden-mobile">
 
           <form method="POST" action="/counters/vote/{{ $counter->id }}">
             {{ csrf_field() }}
@@ -34,7 +34,7 @@
             </button>
           </form>
         </div>
-        <div class="column is-11">
+        <div class="column is-11-desktop is-12-mobile">
           <p class="subtitle">{!! $counter->counter !!}</p>
           <p class="has-text-right">by {{ $counter->author }}</p>
         </div>

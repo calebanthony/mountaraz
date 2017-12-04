@@ -18,13 +18,13 @@
             @foreach($tips as $tip)
                 <div class="card tip">
                     <div class="card-content">
-                    <div class="columns is-vertically-aligned">
+                    <div class="columns is-mobile is-vertically-aligned">
                         <div class="column is-2 is-paddingless has-text-centered">
                             <a href="/champions/{{ $tip->champion }}/tips">
                                 <img src="{{ $tip->championDetails->portrait }}">
                             </a>
                         </div>
-                        <div class="column is-1 has-text-centered is-paddingless">
+                        <div class="column is-1 has-text-centered is-paddingless is-hidden-mobile">
 
                         <form method="POST" action="/tips/vote/{{ $tip->id }}">
                             {{ csrf_field() }}
@@ -52,9 +52,9 @@
                             </button>
                         </form>
                         </div>
-                        <div class="column is-9">
-                        <p class="subtitle">{!! $tip->tip !!}</p>
-                        <p class="has-text-right">by {{ $tip->author }}</p>
+                        <div class="column is-9-desktop is-10-mobile">
+                            <p class="subtitle">{!! $tip->tip !!}</p>
+                            <p class="has-text-right">by {{ $tip->author }}</p>
                         </div>
                     </div>
                     </div>
@@ -66,13 +66,13 @@
             @foreach($counters as $counter)
                 <div class="card tip">
                     <div class="card-content">
-                    <div class="columns is-vertically-aligned">
+                    <div class="columns is-mobile is-vertically-aligned">
                         <div class="column is-2 is-paddingless has-text-centered">
                             <a href="/champions/{{ $counter->champion }}/tips">
                                 <img src="{{ $counter->championDetails->portrait }}">
                             </a>
                         </div>
-                        <div class="column is-1 has-text-centered is-paddingless">
+                        <div class="column is-1 has-text-centered is-paddingless is-hidden-mobile">
 
                         <form method="POST" action="/tips/vote/{{ $counter->id }}">
                             {{ csrf_field() }}
@@ -100,9 +100,9 @@
                             </button>
                         </form>
                         </div>
-                        <div class="column is-9">
-                        <p class="subtitle">{!! $counter->counter !!}</p>
-                        <p class="has-text-right">by {{ $counter->author }}</p>
+                        <div class="column is-9-desktop is-10-mobile">
+                            <p class="subtitle">{!! $counter->counter !!}</p>
+                            <p class="has-text-right">by {{ $counter->author }}</p>
                         </div>
                     </div>
                     </div>

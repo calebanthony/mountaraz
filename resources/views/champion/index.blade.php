@@ -111,42 +111,42 @@
       </div>
       <div class="column is-12 columns is-mobile is-paddingless">
         @foreach($champion->battlerites->where('skill', $champion->ability('LMB')->name) as $b)
-          <div class="column is-3-desktop is-4-mobile">
+          <div class="column is-3">
             @include('partials.battlerite', $b)
           </div>
         @endforeach
       </div>
       <div class="column is-12 columns is-mobile is-paddingless">
         @foreach($champion->battlerites->where('skill', $champion->ability('RMB')->name) as $b)
-          <div class="column is-3-desktop is-4-mobile">
+          <div class="column is-3">
             @include('partials.battlerite', $b)
           </div>
         @endforeach
       </div>
       <div class="column is-12 columns is-mobile is-paddingless">
         @foreach($champion->battlerites->where('skill', $champion->ability('Q')->name) as $b)
-          <div class="column is-3-desktop is-4-mobile">
+          <div class="column is-3">
             @include('partials.battlerite', $b)
           </div>
         @endforeach
       </div>
       <div class="column is-12 columns is-mobile is-paddingless">
         @foreach($champion->battlerites->where('skill', $champion->ability('E')->name) as $b)
-          <div class="column is-3-desktop is-4-mobile">
+          <div class="column is-3">
             @include('partials.battlerite', $b)
           </div>
         @endforeach
       </div>
       <div class="column is-12 columns is-mobile is-paddingless">
         @foreach($champion->battlerites->where('skill', $champion->ability('R')->name) as $b)
-          <div class="column is-3-desktop is-4-mobile">
+          <div class="column is-3">
             @include('partials.battlerite', $b)
           </div>
         @endforeach
       </div>
       <div class="column is-12 columns is-mobile is-paddingless">
         @foreach($champion->battlerites->where('skill', $champion->ability('F')->name) as $b)
-          <div class="column is-3-desktop is-4-mobile">
+          <div class="column is-3">
             @include('partials.battlerite', $b)
           </div>
         @endforeach

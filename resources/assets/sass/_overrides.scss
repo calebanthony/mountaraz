@@ -234,6 +234,10 @@ a {
   }
 }
 
+.navbar-menu {
+  background-color: $primary;
+}
+
 .navbar {
   .navbar-dropdown {
     .navbar-item.is-active {

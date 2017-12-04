@@ -5,13 +5,13 @@
   @foreach ($tips as $tip)
   <div class="card tip">
     <div class="card-content">
-      <div class="columns is-vertically-aligned">
-        <div class="column is-1 is-paddingless has-text-centered">
+      <div class="columns is-mobile is-vertically-aligned">
+        <div class="column is-1-desktop is-2-mobile is-paddingless has-text-centered">
             <a href="/champions/{{ $tip->champion }}/tips">
                 <img src="{{ $tip->championDetails->portrait }}">
             </a>
         </div>
-        <div class="column is-1 has-text-centered is-paddingless">
+        <div class="column is-1 is-hidden-mobile has-text-centered is-paddingless">
 
           <form method="POST" action="/tips/vote/{{ $tip->id }}">
             {{ csrf_field() }}
