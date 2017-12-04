@@ -1,0 +1,31 @@
+.build-attribution {
+    align-self: flex-end;
+}
+
+.tooltip {
+    z-index: 1;
+}
+
+.is-champion {
+    position: relative;
+    margin: 0.3em;
+    background-color: rgba(0,0,0,0.2);
+    padding: 0;
+    text-align: center;
+
+    &:hover {
+        background-color: rgba(0,0,0,0.5);
+    }
+    
+    .champion-name {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    img {
+        width: 100%;
+    }
+}

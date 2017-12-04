@@ -1,0 +1,39 @@
+.is-ability {
+    padding: 0.15em;
+
+    .ability-hotkey {
+        height: auto;
+        position: relative;
+        top: -17px;
+        white-space: normal;
+        width: 100%;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+.ability-tooltip {
+    border: 1px solid $primary;
+    border-radius: 3px;
+    background-color: $grey-dark;
+    max-width: 250px;
+
+    .is-ability-title {
+        font-size: 110%;
+        padding: 0.2em;
+        padding-left: 0.5em;
+        text-align: left;
+        background-color: rgba(0,0,0,0.3);
+    }
+
+    .is-ability-image {
+        padding: 0.3em;
+    }
+
+    .is-ability-description {
+        font-size: 90%;
+        padding: 0.3em;
+    }
+}

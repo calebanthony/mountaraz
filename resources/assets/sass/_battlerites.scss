@@ -1,0 +1,91 @@
+.build-battlerite.is-active {
+    border-bottom: 3px solid $white;
+    padding: 0;
+}
+
+.is-battlerite {
+    padding: 0.3em;    
+
+    .battlerite-hotkey {
+        height: auto;
+        position: relative;
+        top: -17px;
+        white-space: normal;
+        width: 100%;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    .is-mobility-battlerite {
+        border: 4px solid $yellow;
+    }
+    
+    .is-mixed-battlerite {
+        border: 4px solid $grey-lighter;
+    }
+    
+    .is-control-battlerite {
+        border: 4px solid #F65BB3;
+    }
+    
+    .is-survival-battlerite {
+        border: 4px solid $green;
+    }
+    
+    .is-support-battlerite {
+        border: 4px solid $blue;
+    }
+
+    .is-offense-battlerite {
+        border: 4px solid $red;
+    }
+}
+
+.battlerite-tooltip {
+    border: 1px solid $primary;
+    border-radius: 3px;
+    background-color: $grey-dark;
+    max-width: 250px;
+
+    .is-battlerite-title {
+        font-size: 110%;
+        padding: 0.2em;
+        padding-left: 0.5em;
+        text-align: left;
+    }
+    
+    .mobility-title {
+        background-color: rgba($yellow, 0.5);
+    }
+    
+    .mixed-title {
+        background-color: rgba($grey-lighter, 0.5);
+    }
+    
+    .control-title {
+        background-color: rgba(#F65BB3, 0.5);
+    }
+    
+    .survival-title {
+        background-color: rgba($green, 0.5);
+    }
+    
+    .support-title {
+        background-color: rgba($blue, 0.5);
+    }
+
+    .offense-title {
+        background-color: rgba($red, 0.5);
+    }
+
+    .is-battlerite-image {
+        padding: 0.3em;
+    }
+
+    .is-battlerite-description {
+        font-size: 90%;
+        padding: 0.3em;
+    }
+}
