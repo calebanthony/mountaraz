@@ -28,7 +28,7 @@ class Ability extends Model
     public function getImageAttribute()
     {
         $lowerName = preg_replace('/\s+/', '', strtolower($this->name));
-        $championName = Champion::where('id', $this->champion_id)->first()->name;
+        $championName = strtolower(Champion::where('id', $this->champion_id)->first()->name);
         return "/images/{$championName}/{$lowerName}.png";
     }
 }
