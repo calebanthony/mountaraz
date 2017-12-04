@@ -7,7 +7,6 @@
 }
 
 .is-champion {
-    position: relative;
     margin: 0.3em;
     background-color: rgba(0,0,0,0.2);
     padding: 0;
@@ -15,17 +14,20 @@
 
     &:hover {
         background-color: rgba(0,0,0,0.5);
+
+        .champion-name {
+            color: $grey-lighter
+        }
     }
     
     .champion-name {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0,0,0,0.7);
+        margin-top: -5px;
+        background-color: rgba(0,0,0,0.5);
     }
 
     img {
         width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
 }

@@ -58,7 +58,7 @@ class ImportAbilities extends Command
                         'name'          => $a['name']
                     ],
                     [
-                        'hotkey'        => implode(' + ', $a['hotkey']),
+                        'hotkey'        => strtoupper(implode(' + ', $a['hotkey'])),
                         'cooldown'      => rtrim($a['cooldown'], 's'),
                         'energy_cost'   => $a['energy'],
                         'energy_gain'   => $energyGain,
