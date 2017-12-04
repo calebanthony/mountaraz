@@ -23,6 +23,13 @@
           @endforeach
         </div>
         <div class="columns is-mobile">
+          @foreach($champion->battlerites->where('skill', $champion->ability('SPACE')->name) as $b)
+            <div class="column is-2-desktop is-4-mobile build-battlerite" data-hotkey="{{ $b->hotkey }}" data-name="{{ $b->name }}">
+              @include('partials.battlerite', $b)
+            </div>
+          @endforeach
+        </div>
+        <div class="columns is-mobile">
           @foreach($champion->battlerites->where('skill', $champion->ability('Q')->name) as $b)
             <div class="column is-2-desktop is-4-mobile build-battlerite" data-hotkey="{{ $b->hotkey }}" data-name="{{ $b->name }}">
               @include('partials.battlerite', $b)
