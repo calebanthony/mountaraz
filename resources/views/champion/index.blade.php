@@ -95,13 +95,16 @@
       <div class="column is-ability is-2">
         @include('partials.ability', ['a' => $champion->ability('R')])
       </div>
-      <div class="column is-ability is-2 is-offset-2">
+      <div class="column is-ability is-2 is-offset-1">
+        @include('partials.ability', ['a' => $champion->ability('SPACE')])
+      </div>
+      <div class="column is-ability is-2 is-offset-1">
         @include('partials.ability', ['a' => $champion->ability('EX1')])
       </div>
       <div class="column is-ability is-2">
         @include('partials.ability', ['a' => $champion->ability('EX2')])
       </div>
-      <div class="column is-ability is-2 is-offset-2">
+      <div class="column is-ability is-2 is-offset-1">
         @include('partials.ability', ['a' => $champion->ability('F')])
       </div>
     </div>
