@@ -124,6 +124,13 @@
         @endforeach
       </div>
       <div class="column is-12 columns is-mobile is-paddingless">
+        @foreach($champion->battlerites->where('skill', $champion->ability('SPACE')->name) as $b)
+          <div class="column is-3">
+            @include('partials.battlerite', $b)
+          </div>
+        @endforeach
+      </div>
+      <div class="column is-12 columns is-mobile is-paddingless">
         @foreach($champion->battlerites->where('skill', $champion->ability('Q')->name) as $b)
           <div class="column is-3">
             @include('partials.battlerite', $b)
