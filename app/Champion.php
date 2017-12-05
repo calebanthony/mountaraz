@@ -31,9 +31,9 @@ class Champion extends Model
         // Then handle the normal ability hotkeys
         // And finally, if those don't match, match the ability name
         if ($ability === 'EX1') {
-            return $this->abilities()->where('hotkey', 'LIKE', '% + %')->get()[0];
+            return $this->abilities()->where('hotkey', 'LIKE', '%+%')->get()[0];
         } elseif ($ability === 'EX2') {
-            return $this->abilities()->where('hotkey', 'LIKE', '% + %')->get()[1];
+            return $this->abilities()->where('hotkey', 'LIKE', '%+%')->get()[1];
         } elseif ($ability === 'Q' || $ability === 'E' || $ability === 'R' || $ability === 'F' || $ability === 'LMB' || $ability === 'RMB' || $ability === 'SPACE') {
             return $this->abilities()->where('hotkey', $ability)->first();
         } else {

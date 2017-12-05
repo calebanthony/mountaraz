@@ -87,13 +87,13 @@
         @include('partials.ability', ['a' => $champion->ability('RMB')])
       </div>
       <div class="column is-ability is-2">
+        @include('partials.ability', ['a' => $champion->ability('SPACE')])
+      </div>
+      <div class="column is-ability is-2">
         @include('partials.ability', ['a' => $champion->ability('Q')])
       </div>
       <div class="column is-ability is-2">
         @include('partials.ability', ['a' => $champion->ability('E')])
-      </div>
-      <div class="column is-ability is-2">
-        @include('partials.ability', ['a' => $champion->ability('SPACE')])
       </div>
       <div class="column is-ability is-2 is-offset-1">
         @include('partials.ability', ['a' => $champion->ability('R')])
