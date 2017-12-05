@@ -98,14 +98,14 @@
       <div class="column is-ability is-2 is-offset-1">
         @include('partials.ability', ['a' => $champion->ability('R')])
       </div>
-      <div class="column is-ability is-2 is-offset-1">
+      <div class="column is-ability is-2">
+        @include('partials.ability', ['a' => $champion->ability('F')])
+      </div>
+      <div class="column is-ability is-2 is-offset-2">
         @include('partials.ability', ['a' => $champion->ability('EX1')])
       </div>
       <div class="column is-ability is-2">
         @include('partials.ability', ['a' => $champion->ability('EX2')])
-      </div>
-      <div class="column is-ability is-2 is-offset-1">
-        @include('partials.ability', ['a' => $champion->ability('F')])
       </div>
     </div>
     <div class="columns is-multiline is-mobile">
